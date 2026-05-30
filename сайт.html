@@ -16,7 +16,14 @@
     <div id="preloader">
     <img src="preloader.gif" alt="LOADING">
 </div>
-<script src="js/index.js"></script>
+<script>
+    window.addEventListener('load', function() {
+        var preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.classList.add('hide-preloader');
+        }
+    });
+</script>
 <header class="header">
     <div class="container header-inner">
         <a href="#" class="logo">🏊‍♂️ <span>Иван Киселев</span></a>
